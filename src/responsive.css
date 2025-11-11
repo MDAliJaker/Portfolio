@@ -1,0 +1,11 @@
+ @media(max-width:800px){
+            .grid{grid-template-columns:1fr}
+            .menu-toggle{display:inline-block}
+            .nav-links{position:fixed;right:12px;top:64px;background:#fff;padding:1rem;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,.12);flex-direction:column;display:none}
+            .nav-links.show{display:flex}
+        }
+
+ @media (max-width:600px){
+            :root{ --page-side-padding:18px; --section-vertical-padding:24px; }
+            .grid{ gap:0.75rem; }
+        }
