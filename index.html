@@ -12,8 +12,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Sora:wght@400;600;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="/MAJ logo.png">
+  <link rel="stylesheet" href="src/styles.css">
+  <link rel="icon" type="image/png" href="src/MAJ logo.png">
 
 </head>
 
@@ -23,7 +23,7 @@
 
   <header class="topbar" id="home">
     <a class="brand" href="#home">
-      <img class="brand-logo" src="MAJ Logo.png" alt="MAJ Logo">
+      <img class="brand-logo" src="src/MAJ logo.png" alt="MAJ Logo">
       <span>MD Ali Jaker</span>
     </a>
     <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
@@ -42,11 +42,11 @@
   <main>
     <section class="hero reveal">
       <div class="hero-copy">
-        <p class="eyebrow">CSE Graduate • Bangladesh</p>
+        <p class="eyebrow"> A CSE Graduate • Software Engineer form Bangladesh</p>
         <h1>Hello, I'm <span>MD Ali Jaker</span></h1>
         <p>
-          I am a fresh CSE graduate, building across programming, OOP, databases, AI/ML,
-          and software engineering. I also know basic data analysis using Excel, basic AI prompt engineering,
+          I am a fresh CSE graduate, building across programming, OOP, databases, AI/ML, and software engineering. I
+          also know basic data analysis using Excel, basic AI prompt engineering,
           and digital marketing with Facebook and Google ad tools.
         </p>
         <div class="hero-cta">
@@ -56,7 +56,7 @@
       </div>
       <div class="hero-card">
         <div class="avatar">
-          <img src="MD Ali Jaker.png" alt="Portrait of MD Ali Jaker">
+          <img src="src/MD Ali Jaker.png" alt="Portrait of MD Ali Jaker">
         </div>
         <ul>
           <li><strong>Degree:</strong> B.Sc in Computer Science and Engineering</li>
@@ -82,8 +82,25 @@
         <article class="card">
           <h3>Higher Secondary Certificate (H.S.C)</h3>
           <p class="muted">Chittagong City Corporation Municipal Model College</p>
-          <p class="muted">Chittagong Board • 2020 (Session: 2018-2019)</p>
+          <p class="muted">Chittagong Board • 2020</p>
+          <p>Session: 2018-2019</p>
           <p>Group: Science</p>
+          <p><strong>GPA:</strong> 5.00 / 5.00</p>
+        </article>
+        <article class="card">
+          <h3>Senior School Certificate (S.S.C)</h3>
+          <p class="muted">Kattoli Nurul Hoque Chowdhury High School</p>
+          <p class="muted">Chittagong Board • 2018</p>
+          <p> Session: 2018-2019</p>
+          <p>Group: Science</p>
+          <p><strong>GPA:</strong> 4.72 / 5.00</p>
+        </article>
+        <article class="card">
+          <h3>Junior School Certificate (J.S.C)</h3>
+          <p class="muted">Mirza Ahmed Ispahani High School</p>
+          <p class="muted">Chittagong Board • 2015</p>
+          <p> Session: 2015</p>
+          <p>Group: General</p>
           <p><strong>GPA:</strong> 5.00 / 5.00</p>
         </article>
       </div>
@@ -115,52 +132,66 @@
 
     <section class="section reveal" id="skills">
       <h2>Skills</h2>
-      <div class="skills-wrap">
-        <div class="skill"><span>C</span>
-          <div class="bar"><i style="width:50%"></i></div><em>50%</em>
-        </div>
-        <div class="skill"><span>Java</span>
-          <div class="bar"><i style="width:60%"></i></div><em>60%</em>
-        </div>
-        <div class="skill"><span>Python</span>
-          <div class="bar"><i style="width:60%"></i></div><em>60%</em>
-        </div>
-        <div class="skill"><span>HTML</span>
-          <div class="bar"><i style="width:75%"></i></div><em>75%</em>
-        </div>
-        <div class="skill"><span>CSS</span>
-          <div class="bar"><i style="width:50%"></i></div><em>50%</em>
-        </div>
-        <div class="skill"><span>Django</span>
-          <div class="bar"><i style="width:50%"></i></div><em>50%</em>
-        </div>
-        <div class="skill"><span>MySQL</span>
-          <div class="bar"><i style="width:50%"></i></div><em>50%</em>
-        </div>
-        <div class="skill"><span>SQLite</span>
-          <div class="bar"><i style="width:50%"></i></div><em>50%</em>
-        </div>
-        <div class="skill"><span>Dart</span>
-          <div class="bar"><i style="width:50%"></i></div><em>50%</em>
-        </div>
-        <div class="skill"><span>Flutter</span>
-          <div class="bar"><i style="width:40%"></i></div><em>40%</em>
-        </div>
-        <div class="skill"><span>Excel (Data Analysis)</span>
-          <div class="bar"><i style="width:40%"></i></div><em>40%</em>
-        </div>
-        <div class="skill"><span>AI Prompt Engineering</span>
-          <div class="bar"><i style="width:35%"></i></div><em>35%</em>
-        </div>
-        <div class="skill"><span>FB Page Management</span>
-          <div class="bar"><i style="width:60%"></i></div><em>60%</em>
-        </div>
-        <div class="skill"><span>FB Business Manager</span>
-          <div class="bar"><i style="width:55%"></i></div><em>55%</em>
-        </div>
-        <div class="skill"><span>Paid Ads (FB/Google/YT)</span>
-          <div class="bar"><i style="width:50%"></i></div><em>50%</em>
-        </div>
+      <div class="skill-groups">
+        <article class="card skill-group-card">
+          <h3>Programming</h3>
+          <div class="skill-tags">
+            <div class="skill-pill" data-percent="50"><span class="skill-name">C</span><span
+                class="skill-percent">50%</span></div>
+            <div class="skill-pill" data-percent="60"><span class="skill-name">Java</span><span
+                class="skill-percent">60%</span></div>
+            <div class="skill-pill" data-percent="60"><span class="skill-name">Python</span><span
+                class="skill-percent">60%</span></div>
+            <div class="skill-pill" data-percent="50"><span class="skill-name">Dart</span><span
+                class="skill-percent">50%</span></div>
+          </div>
+        </article>
+        <article class="card skill-group-card">
+          <h3>Web & Framework</h3>
+          <div class="skill-tags">
+            <div class="skill-pill" data-percent="75"><span class="skill-name">HTML</span><span
+                class="skill-percent">75%</span></div>
+            <div class="skill-pill" data-percent="50"><span class="skill-name">CSS</span><span
+                class="skill-percent">50%</span></div>
+            <div class="skill-pill" data-percent="50"><span class="skill-name">Django</span><span
+                class="skill-percent">50%</span></div>
+            <div class="skill-pill" data-percent="40"><span class="skill-name">Flutter</span><span
+                class="skill-percent">40%</span></div>
+          </div>
+        </article>
+        <article class="card skill-group-card">
+          <h3>Database</h3>
+          <div class="skill-tags">
+            <div class="skill-pill" data-percent="50"><span class="skill-name">MySQL</span><span
+                class="skill-percent">50%</span></div>
+            <div class="skill-pill" data-percent="50"><span class="skill-name">SQLite</span><span
+                class="skill-percent">50%</span></div>
+          </div>
+        </article>
+        <article class="card skill-group-card">
+          <h3>Data & AI</h3>
+          <div class="skill-tags">
+            <div class="skill-pill" data-percent="40"><span class="skill-name">Excel Data Analysis</span><span
+                class="skill-percent">40%</span></div>
+            <div class="skill-pill" data-percent="35"><span class="skill-name">AI Prompt Engineering</span><span
+                class="skill-percent">35%</span></div>
+          </div>
+        </article>
+        <article class="card skill-group-card">
+          <h3>Digital Marketing</h3>
+          <div class="skill-tags">
+            <div class="skill-pill" data-percent="60"><span class="skill-name">FB Page Management</span><span
+                class="skill-percent">60%</span></div>
+            <div class="skill-pill" data-percent="55"><span class="skill-name">FB Business Manager</span><span
+                class="skill-percent">55%</span></div>
+            <div class="skill-pill" data-percent="50"><span class="skill-name">FB Ads</span><span
+                class="skill-percent">50%</span></div>
+            <div class="skill-pill" data-percent="50"><span class="skill-name">Google Ads</span><span
+                class="skill-percent">50%</span></div>
+            <div class="skill-pill" data-percent="50"><span class="skill-name">YT Ads</span><span
+                class="skill-percent">50%</span></div>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -241,7 +272,7 @@
           <input id="email" name="email" type="email" autocomplete="email" placeholder="your@email.com" required>
 
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+          <textarea id="message" name="message" rows="3" placeholder="Write your message..." required></textarea>
 
           <button class="btn btn-primary" type="submit">Send Message</button>
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
@@ -255,11 +286,25 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; MD Ali Jaker - All rights reserved</p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-branding">
+        <img src="src/MAJ logo.png" alt="MAJ Logo">
+        <div>
+          <strong>MD Ali Jaker</strong>
+          <p>CSE Graduate • Software, AI, Data & Digital Marketing</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 MD Ali Jaker. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="src/script.js"></script>
 </body>
 
 </html>
